@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+
+}
+
+.hero_section {
+  background-image: url(images/Developer_image_3.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heading_container {
+  color: whitesmoke;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px;
+  padding-left: 150px;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading_container h1 {
+  text-transform: uppercase;
+}
+.heading_container h2:hover{
+  transform:scale(1.1);
+  color: aquamarine;
+}
+.heading_container h1:hover{
+  transform:scale(1.1);
+  color: rgb(128, 241, 245);
+}
+
+.large_text {
+  font-size: 80px;
+}
+
+.intro {
+  background-color: rgb(73, 69, 69);
+}
+.intro h2 {
+  min-height: 100px;
+  font-weight: 400;
+  font-size: 60px;
+  color: rgb(171, 247, 221);
+  text-align: center;
+}
+
+.intro p {
+  font-size: 30px;
+  color: azure;
+  padding: 0 300px;
+  text-align: center;
+}
+
+.my_work {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  align-items: center;
+  background-image: linear-gradient(180deg, rgb(87, 202, 193), rgb(13, 247, 176));
+  gap:30px;
+}
+
+.grid_item{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     gap:50px;
+    
+}
+
+.card {
+  max-width: 400px;
+  height: 850px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.4);
+  border: 2px solid;
+  transition: 0.4s ease-in-out;
+   font-family: 'Montserrat', sans-serif;
+   font-family: 'Poppins', sans-serif; ;
+}
+.card:hover{
+    transform:scale(1.1) ;
+    box-shadow: 8px 8px 8px rgba(1, 1, 1, 0.7);
+}
+.card_image{
+    max-width:400px;
+    display: flex;
+    justify-content: center;
+}
+
+.card_text{
+    padding: 20px;  
+}
+.card_text ol{
+    margin-left: 15px;
+}
+
+.card_text h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.content2 h3{
+    color: rgb(145, 255, 0);
+    font-weight: bold;
+}
+
+.content1 h3{
+    color: blueviolet;
+    font-weight: bold;
+}
+.content3 h3{
+    color: rgb(255, 0, 119);
+    font-weight: bold;
+}
+.content4 h3{
+    color: rgb(255, 145, 0);
+    font-weight: bold;
+}
+.content1 ol{
+    color: rgb(255, 51, 0);
+    font-weight: bold;
+    font-size: 20px;
+}
+.content2 ol{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+.content3 ol{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+.content4 ol{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bottom{
+  display: flex;
+  border:2px solid cadetblue;
+}
+.contact{
+  background-color: rgb(141, 46, 46);
+  
+}
+.about{
+  background-color: midnightblue;
+  
+}
+.contact,.about{
+  min-height:400px;
+  width: 50%;
+  color: whitesmoke;
+}
+
+.contact h2,.about h2{
+  margin-top: 30px;
+  font-size: 70px;
+  text-align: center;
+}
+.contact ul,.about p{
+  font-size: 30px;
+  text-align: justify;
+  padding:40px;
+}
+.contact li:hover{
+  cursor: pointer;
+  color :aqua;
+}
+
+.footer{
+  color: #57cbff;
+  text-align: center;
+  padding: 35px;
+  animation: forwards;
+  text-transform: uppercase;
+  background-color: crimson;
+  height: 100px;  
+}
+.end span{
+  animation-duration: 8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 100px;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+
+@media (max-width:950px){
+  .hero_section{
+    min-height: 60vh;
+  }
+  .heading_container{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 40px;
+  }
+  .intro h2{
+    font-size: 35px;
+  }
+  .intro p{
+    padding: 0px;
+    text-align: left;
+    padding-bottom: 30px;
+  }
+  .card{
+    transition: none;
+  }
+  .contact h2,.about h2{
+    font-size: 40px;
+  }
+  .bottom{
+    flex-direction: column;
+  }
+  .contact,.about{
+    width: 100vw;
+  }
+}
+
+@media (max-width:600px) {
+ *{
+  margin: 0;
+  max-width: 100vw;
+ }
+  .end span{
+    animation: none;
+  }
+  .card_text{
+  overflow-wrap: break-word;
+  }
+  .content2{
+  overflow-wrap: break-word;
+  }
+  .content3{
+  overflow-wrap: break-word;
+  }
+  .content4{
+  overflow-wrap: break-word;
+  }
+}
+@media (max-width:370px){
+  .about{
+    text-align: left;
+  }
+}

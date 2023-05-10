@@ -1,0 +1,153 @@
+body{
+    height: 100vh;
+    margin: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: grey;
+    
+}
+
+
+.image1{
+    background-image: url(images/galaxy-image1.jpg);
+    min-height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.image2{
+    background-image: url(images/galaxy-image2.jpg);
+    min-height:600px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.image3{
+    background-image: url(images/galaxy-image3.jpg);
+    min-height: 600px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.image4{
+    background-image: url(images/galaxy-image4.jpg);
+    min-height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.parallax_text1{
+    position: absolute;
+    top: 49%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    letter-spacing: 6px;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.parallax_text2{
+    position: absolute;
+    top: 49%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    letter-spacing: 6px;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;   
+}
+.parallax_text3{
+    position: absolute;
+    top: 49%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing: 6px;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.parallax_text4{
+    position: absolute;
+    top: 49%;
+   width: 100%;
+    text-align: center;
+    color: black;
+    letter-spacing: 6px;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.text_bg1{
+    background-color: rgb(58, 54, 54);
+    color: beige;
+    padding: 25px;
+    border-style: groove;
+    border-color: aquamarine;
+    border-width: 7px;
+}
+.text_bg1:hover {
+      transform: scale(1.1);
+    }
+.articles{
+    padding: 50px 80px;
+    text-align: justify;
+    
+}
+.articles h2{
+    text-align: center;
+}
+.text_bg2{
+    background-color:rgba(255, 255, 255, 0.3);
+    color: beige;
+    padding: 25px;
+}
+
+.article1{
+    background-color: white;
+    color: rgb(49, 47, 47);
+    font-size: 25px;
+}
+
+
+.article2{
+    background-color: rgb(49, 47, 47);
+    color: white;
+    font-size: 25px;
+}
+
+
+.article3{
+    background-color: white;
+    color: rgb(49, 47, 47);
+    font-size: 25px;
+}
+
+.text_bg4{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(248, 248, 3);
+    padding: 25px;
+    border: 1px solid red;
+} 
+
+

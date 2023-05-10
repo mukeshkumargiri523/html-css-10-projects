@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+    margin-left: 90px;
+    background-color: #fff;
+    z-index: 2;
+}
+body {
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px; 
+    gap: 64px;
+
+}
+
+
+.logo img{
+    width: 160px;
+    height: auto;
+}
+.center_nav{
+    display: flex;
+}
+.search{
+    display: flex;
+}
+.search input{
+    min-width: 640px;
+    padding: 10px 25px;
+    border: 0.8px solid rgb(228, 228, 188);
+    border-radius: 5px;
+}
+.search button{
+    border: none;   
+}
+.mic{
+    margin: 0 20px;
+    border-radius: 50%;
+    background-color: rgb(233, 231, 231);
+    display: flex;
+    align-items: center;
+
+}
+.search i{
+    width:40px;
+    background-color: #f3eded;
+    border: 1px solid rgb(238, 234, 234);
+}
+.search i:hover{
+    background-color:darkgray;
+}
+.container button{
+    background-color: #fff;
+    border: none;
+}
+.container button:hover{
+    background-color: lightgray;
+    transition: 0.2s ease-in-out;
+}
+.mic{
+    border: none;
+    background-color: #e1d9d9;
+    
+}
+.mic:hover{
+    background-color:darkgray;
+}
+.mic img{
+    width: 40px;
+}
+.side_nav{
+ display: flex;
+ align-items: center;
+ gap: 28px;
+ justify-content: center;
+
+ 
+}
+
+.tags{
+    display: flex;
+    padding: 10px 30px;
+    gap: 20px;
+    border-top: 1px solid rgb(240, 223, 223);
+}
+.tag{
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    
+}
+.dark{
+    background-color: rgb(27, 26, 26);
+    color: white;
+}
+.light
+{
+    color: rgb(128, 120, 120);
+}
+.header_container{
+    width: 100%;
+}
+
+.side_icon button{
+     background-color: white;
+     border: none;
+}
+
+aside{
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    position: absolute;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+
+.side_icon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container{
+    display: flex;
+    position: relative;
+}
+.bar_icon{
+        background-color: #fff;
+        border: none;
+}
+main{
+    margin-left: 90px;
+    min-height: 100vh;
+    background-color: rgb(240,240,240);
+}
+.card_container button{
+     background-color: rgb(240,240,240);
+}
+.card_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
+}
+.cards {
+    padding:10px ;
+    display: flex;
+    flex-direction: column;
+     max-width: 380px;
+     overflow: hidden;
+}
+.cards .thumbnail{
+    border-radius: 10px;
+}
+.thumbnail:hover{
+    transform: scale(1.02);
+    border-radius: none;
+}
+.content h3:hover{
+     transform: scale(1.02);
+}
+.avatar_info{
+    padding-top: 5px;
+    display: flex;
+    gap: 20px;
+}
+.avatar{
+    display: flex;
+}
+.dots{
+    display: flex;
+}
+.channel_name{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(102, 99, 99);
+}
+.content_status{
+    font-size: 13px;
+}
